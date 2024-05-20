@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="hours.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="main">
+    <div id="darkBack"></div>
+    
+    <div id="container">
+      <div class="circle"></div>
+      <div class="logo-container">
+        <a href="hours.html"><img src="logo.png" alt="DonMac Logo" class="logo" /></a>
+      </div>
+      <div class="main-menu">
+        <ul>
+          <li><a href="home.html" class="ho">Home</a></li>
+          <li><a href="about.html" class="ab">About</a></li>
+          <li><a href="order.html" class="or">Order</a></li>
+          <li><a href="hours.html" class="con">Hours</a></li>
+        </ul>
+      </div>
+    </div>
+  
+    <div id="timeDiv"></div>
+    <br>
+    <label class="viewOpen" for="modal-state">View Hours&nbsp;&nbsp;<i class="fa fa-clock-o"></i></label>
+    <input type="checkbox" name="modal-state" id="modal-state">
+    <div class="modal-overlay">
+      <label for="modal-state" class="modal-overlay-close"></label>
+      <div class="modal">
+        <label class="button-close" for="modal-state"><i class="fa fa-times"></i></label>
+        <h2>We're Open At These Times</h2>
+        <div class="dateTime" id="Monday">
+          <div class="day">Monday</div>
+          <div class="time">8:00am - 5:00pm</div>
+        </div>
+        <br>
+        <div class="dateTime" id="Tuesday">
+          <div class="day">Tuesday</div>
+          <div class="time">8:00am - 5:00pm</div>
+        </div>
+        <br>
+        <div class="dateTime" id="Wednesday">
+          <div class="day">Wednesday</div>
+          <div class="time">8:00am - 5:00pm</div>
+        </div>
+        <br>
+        <div class="dateTime" id="Thursday">
+          <div class="day">Thursday</div>
+          <div class="time">8:00am - 5:00pm</div>
+        </div>
+        <br>
+        <div class="dateTime" id="Friday">
+          <div class="day">Friday</div>
+          <div class="time">8:00am - 5:00pm</div>
+        </div>
+        <br>
+        <div class="dateTime" id="Saturday">
+          <div class="day">Saturday</div>
+          <div class="time">1:00 PM to 11:00 PM</div>
+        </div>
+        <br>
+        <div class="dateTime" id="Sunday">
+          <div class="day">Sunday</div>
+          <div class="time">1:00 PM to 11:00 PM</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="hours.js"></script>
+</body>
+</html>
